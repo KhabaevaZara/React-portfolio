@@ -7,7 +7,7 @@ const Home = () => {
               <h2 className="title-1" data-i18n="about_title">About Me</h2>
               <div className="about__content">
                   <div className="about__image animate">
-                      <img src="/images/.jpg" alt="Zara - Frontend Developer" />
+                      <img src="src/assets/images/Me.jpg" alt="Zara - Frontend Developer" />
                   </div>
                   <div className="about__info">
                       <h2 data-i18n="about_heading">Frontend Developer with 5+ Years of Experience</h2>
