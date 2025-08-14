@@ -1,0 +1,144 @@
+
+/* Navigation */
+.nav {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--dark-border);
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .nav.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    color: var(--header-text);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  
+  .logo i {
+    font-size: 1.8rem;
+  }
+  
+  .logo strong {
+    font-weight: 700;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list__link {
+    color: var(--header-text);
+    text-decoration: none;
+  
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    display: inline-block; /* Или другой подходящий display */
+    padding-bottom: 5px; /* Отступ для полоски */
+  }
+  
+  .nav-list__link::after {
+    content: "";
+    transition: width 0.3s ease; /* Плавное изменение ширины */
+    height: 2px;
+    background-color: var(--accent);
+    position: absolute;
+    left: 0;
+    top: 100%;
+  bottom: 0;
+  width: 0; /* Начальная ширина 0 */
+  
+  }
+  .nav-list__link:hover::after{
+  width: 100%;
+  }
+  
+  
+  /* Language Switcher */
+  .lang-switcher {
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  .lang-btn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .lang-btn i {
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile menu */
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  

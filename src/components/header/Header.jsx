@@ -1,5 +1,5 @@
 
-
+import './Header.css';
 const Header = () => {
   return (
     <nav class="nav" id="navbar">
