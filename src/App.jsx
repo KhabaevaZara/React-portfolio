@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <Header />
-      <h1>React portfolio</h1>
       <HeaderMe/>
       <About/>
       <Services/>
